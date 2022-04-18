@@ -1,0 +1,61 @@
+@import 'assets/styles/color';
+
+header{
+    height: 5rem;
+    border-bottom: 1px solid $border;
+    padding: 0 3rem;
+
+    .container{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-nav{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h2{
+            color: $primary;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        nav{
+            ul{
+                list-style: none;
+                display: flex;
+
+                li{
+                    color: $grey_text;
+                    padding: 0 1.2rem;
+                    position: relative;
+
+                    &.active{
+                        color: $black;
+                    }
+
+                    .dot{
+                        position: absolute;
+                        bottom: -7px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: $primary;
+                    }
+                }
+            }
+        }
+        .message-credits{
+            background-color: $faded;
+            border-radius: 13px;
+            color: $primary;
+            padding: .8rem 1rem;
+            p{
+                padding: 0; margin: 0;
+            }
+        }
+    }
+}
