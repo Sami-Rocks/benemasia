@@ -8,7 +8,7 @@ const Sidebar = () => {
                 <ul>
                     {
                         sidebarData.map(data => (
-                            <li key={data.id} >{data.title}</li>
+                            <li key={data.id} className={`${data.id === 2 && 'active'}`} >{data.title}</li>
                         ))
                     }
                 </ul>

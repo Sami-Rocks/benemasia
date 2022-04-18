@@ -1,0 +1,14 @@
+.settings{
+    .container{
+        display: flex;
+        section{
+            padding: 3rem;
+            width: 100%;
+            h4{
+                font-size: larger;
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

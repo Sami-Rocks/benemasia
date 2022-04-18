@@ -54,3 +54,27 @@ export const sidebarData = [
         icon: ""
     },
 ]
+
+export const checklistData = [
+    {
+        id: 1,
+        name: 'Tenant',
+        checked: true
+    },
+    {
+        id: 2,
+        name: 'Developer'
+    },
+    {
+        id: 3,
+        name: 'Facility Manager'
+    },
+    {
+        id: 4,
+        name: 'Property Owner'
+    },
+    {
+        id: 5,
+        name: 'Landloard'
+    },
+]

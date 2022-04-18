@@ -2,7 +2,7 @@
 
 .sidebar{
     height: calc( 100vh - 5rem );
-    width: 15rem;
+    width: 24rem;
     border-right: 1px solid $border;
     ul{
         margin: 0; padding: 0;
@@ -12,7 +12,7 @@
             cursor: pointer;
             margin: .5rem 2rem;
             padding: 1rem;
-            &:hover{
+            &:hover, &.active{
                 background: $primary;
                 color: #fff;
                 border-radius: 5px;

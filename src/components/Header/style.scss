@@ -30,6 +30,11 @@ header{
                     color: $grey_text;
                     padding: 0 1.2rem;
                     position: relative;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $black;
+                    }
 
                     &.active{
                         color: $black;
