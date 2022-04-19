@@ -1,5 +1,19 @@
+type HeaderDataType = {
+    id:number;
+    title: string
+}
 
-export const headerData = [
+type SidebarDataType ={
+    icon:string
+} & HeaderDataType
+
+type ChecklistDataType = {
+    id:number;
+    name:string;
+    checked?:boolean
+}
+
+export const headerData:HeaderDataType[] = [
     {
         id: 1,
         title: "Dashboard"
@@ -27,7 +41,7 @@ export const headerData = [
 
 ]
 
-export const sidebarData = [
+export const sidebarData:SidebarDataType[] = [
     {
         id: 1,
         title: "Onboarding",
@@ -55,7 +69,7 @@ export const sidebarData = [
     },
 ]
 
-export const checklistData = [
+export const checklistData:ChecklistDataType[] = [
     {
         id: 1,
         name: 'Tenant',
