@@ -1,0 +1,37 @@
+@import "assets/styles/_color.scss";
+
+.community-header{
+    height: 3rem;
+    border-bottom: 1px solid $border;
+    padding: 0 3rem;
+    .container{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+
+        h3{
+            font-weight: 500;
+            margin: 0;
+        }
+
+        ul{
+            list-style: none;
+            display: inline-flex;
+            margin-left: 3rem;
+
+            li{
+                margin: 0  1rem;
+                color: $grey_text;
+                padding: .98rem 0;
+                cursor: pointer;
+                &:hover{
+                    color: $black;
+                }
+                &.active{
+                    color: $black;
+                    border-bottom: 1px solid $primary;
+                }
+            }
+        }
+    }
+}
