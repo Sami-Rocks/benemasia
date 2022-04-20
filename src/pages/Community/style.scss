@@ -1,0 +1,120 @@
+@import "assets/styles/color";
+
+.community{
+    .main{
+        display: flex;
+        max-width: 1124px;
+        margin: 0 auto;
+        padding: 2rem;
+        gap: 2rem;
+        .post-area{
+            .post-input{
+                background: #FCFCFD; 
+                padding: 2rem;
+                border:  1px solid #EFF1F5;
+                border-radius: 8px;
+
+                input{
+                    padding: 1.3rem;
+                    border-radius: 30px;
+                    border: 1px solid $border;
+                    width: calc( 100% - 2.6rem );
+                    &::placeholder{
+                        color: $light_grey_text;
+                    }
+                }
+                .post-types{
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 5rem;
+                    color: $primary;
+                }
+
+            }
+            .posts{
+               
+                .post{
+                    display: flex;
+                    gap: 1rem;
+                    border-bottom: 1px solid $border;
+                    margin: 3rem 0;
+                    .icon{
+                        width: 110px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background: $light_grey_text;
+
+                    }
+                    .content{
+                        h4{
+                            font-size: 1.1rem;
+                            margin-top: .1rem;
+                            font-weight: 500;
+                            span{
+                                font-size: 1rem;
+                                color: $grey_text;
+                                font-weight: 100;
+                            }
+                        }
+                        .reactions{
+                            color: $grey_text;
+                            display: flex;
+                            gap: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .incoming{
+            width: 40rem;
+            border: 1px solid $border;
+            padding: 2rem;
+            border-radius: 8px;
+            h3, h4{
+                margin: 0;
+                font-weight: 500;
+            }
+
+            .requests{
+                margin: 1rem 0;
+                .request{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: auto;
+                    border-bottom: 1px solid $border;
+                    padding: 1.5rem 0;
+                    .texts{
+                        display: flex;
+                        gap: .7rem;
+                    }.icon{
+                        width: 40px;
+                        height: 40px;
+                        background: $light_grey_text;
+                        border-radius: 50%;
+                    }
+                    p{
+                        color: $light_grey_text;
+                        font-size: .85rem;
+                        margin: .25rem 0;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 150px;
+                        overflow: hidden;
+                    }
+
+                    button{
+                        border: none;
+                        background: $faded;
+                        color: $primary;
+                        height: 35px;
+                        font-size: .8rem;
+                        padding: .2rem 1.2rem;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
