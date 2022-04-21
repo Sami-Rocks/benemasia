@@ -6,7 +6,7 @@
     transition: all .2s ease-in-out;
 }
 html{
-    font-size: 90%;
+    font-size: 79%;
 }
 body {
     font-family: 'DM Sans', sans-serif;
@@ -22,14 +22,12 @@ body {
     height: 34px;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -67,8 +65,7 @@ body {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
-  /* Rounded sliders */
+
   .slider.round {
     border-radius: 34px;
   }
@@ -77,7 +74,6 @@ body {
     border-radius: 50%;
   }
 
-  /* Customize the label (the container) */
 .checkbox {
     display: block;
     position: relative;
@@ -91,7 +87,6 @@ body {
     user-select: none;
   }
   
-  /* Hide the browser's default checkbox */
   .checkbox input {
     position: absolute;
     opacity: 0;
@@ -100,7 +95,7 @@ body {
     width: 0;
   }
   
-  /* Create a custom checkbox */
+
   .checkmark {
     position: absolute;
     top: 0;
@@ -108,33 +103,32 @@ body {
     height: 18px;
     width: 18px;
     border-radius: 4px;
-    // background-color: #eee;
     border: 1px solid $primary;
   }
   
-  /* On mouse-over, add a grey background color */
+
   .checkbox:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the checkbox is checked, add a blue background */
+
   .checkbox input:checked ~ .checkmark {
     background-color: $primary;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
+
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the checkmark when checked */
+
   .checkbox input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the checkmark/indicator */
+
   .checkbox .checkmark:after {
     left: 6px;
     top: 3px;
@@ -145,4 +139,12 @@ body {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+
+    html{
+      font-size: 90%;
+  }
   }

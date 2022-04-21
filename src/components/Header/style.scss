@@ -11,6 +11,16 @@ header{
         align-items: center;
         justify-content: space-between;
 
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .menu{
+                margin-top: 5px;
+                display: block;
+            }
+        }
+
         .logo-nav{
             display: flex;
             align-items: center;
@@ -22,6 +32,7 @@ header{
         }
 
         nav{
+            display: none;
             ul{
                 list-style: none;
                 display: flex;
@@ -33,14 +44,11 @@ header{
                     a{
                         color: $grey_text;
                         text-decoration: none;
-                        &.active{
-                            color: $black;
-                        }
                     }
-                    &:hover{
-                        color: $black;
+                    &:hover a{
+                        color: $black ;
                     }
-                    &.active{
+                    &.active a{
                         color: $black;
                     }
 
@@ -86,3 +94,20 @@ header{
         
     }
 }
+
+
+@media only screen and (min-width: 1200px) {
+    header {
+      nav{
+          display: block !important;
+      }
+      .container{
+          .logo{
+              .menu{
+                  display: none;
+              }
+          }
+
+      }
+    }
+  }

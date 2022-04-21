@@ -6,7 +6,6 @@
         section{
             padding: 3rem;
             width: 100%;
-            max-width: 1120px;
             h4{
                 font-size: larger;
                 font-weight: 500;
@@ -30,7 +29,7 @@
                 .with-icon{
                     margin: auto;
                     text-align: center;
-                    width: 140px;
+                    width: fit-content;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -38,5 +37,17 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    section{
+        padding: 3rem;
+        width: 100%;
+        max-width: 1120px;
+    }
+    table{
+        width: 140px;
+        
     }
 }

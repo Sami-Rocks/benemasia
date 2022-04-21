@@ -1,8 +1,9 @@
 @import "assets/styles/color";
 
 .sidebar{
+    width: 0;
+    display: none;
     height: calc( 100vh - 5rem );
-    width: 24rem;
     border-right: 1px solid $border;
     ul{
         margin: 0; padding: 0;
@@ -21,5 +22,12 @@
                 border-radius: 5px;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidebar{
+        min-width: 22rem;
+        display: block;
     }
 }

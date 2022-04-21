@@ -79,6 +79,7 @@
             }
         }
         .incoming{
+            display: none;
             width: 40rem;
             border: 1px solid $border;
             padding: 2rem;
@@ -131,3 +132,13 @@
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .community{
+        .main{
+            .incoming{
+                display: block;
+            }
+
+        }
+    }
+}
