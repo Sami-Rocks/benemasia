@@ -10,7 +10,7 @@
         .post-area{
             .post-input{
                 background: #FCFCFD; 
-                padding: 2rem;
+                padding: 1rem 2rem;
                 border:  1px solid #EFF1F5;
                 border-radius: 8px;
 
@@ -28,6 +28,11 @@
                     display: flex;
                     gap: 5rem;
                     color: $primary;
+                    .types{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px ;
+                    }
                 }
 
             }
@@ -38,12 +43,20 @@
                     gap: 1rem;
                     border-bottom: 1px solid $border;
                     margin: 3rem 0;
+                    .icon_{
+                        width: 100px;
+                    }
                     .icon{
-                        width: 110px;
-                        height: 50px;
+                        width: 70px;
+                        height: 70px;
                         border-radius: 50%;
-                        background: $light_grey_text;
+                        background: $icon_background;
 
+                    }
+                    .react{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
                     }
                     .content{
                         h4{
@@ -83,14 +96,14 @@
                     align-items: center;
                     width: auto;
                     border-bottom: 1px solid $border;
-                    padding: 1.5rem 0;
+                    padding: 2rem 0;
                     .texts{
                         display: flex;
                         gap: .7rem;
                     }.icon{
                         width: 40px;
                         height: 40px;
-                        background: $light_grey_text;
+                        background: $icon_background;
                         border-radius: 50%;
                     }
                     p{
@@ -99,7 +112,7 @@
                         margin: .25rem 0;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        width: 150px;
+                        width: 140px;
                         overflow: hidden;
                     }
 

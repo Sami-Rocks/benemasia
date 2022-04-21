@@ -27,6 +27,15 @@
                 .left{
                     text-align: left;
                 }
+                .with-icon{
+                    margin: auto;
+                    text-align: center;
+                    width: 140px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 30px;
+                }
             }
         }
     }

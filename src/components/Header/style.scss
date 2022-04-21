@@ -27,18 +27,23 @@ header{
                 display: flex;
 
                 li{
-                    color: $grey_text;
                     padding: 0 1.2rem;
                     position: relative;
                     cursor: pointer;
-
+                    a{
+                        color: $grey_text;
+                        text-decoration: none;
+                        &.active{
+                            color: $black;
+                        }
+                    }
                     &:hover{
                         color: $black;
                     }
-
                     &.active{
                         color: $black;
                     }
+
 
                     .dot{
                         position: absolute;
@@ -53,6 +58,11 @@ header{
                 }
             }
         }
+        .user-area{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
         .message-credits{
             background-color: $faded;
             border-radius: 13px;
@@ -62,5 +72,17 @@ header{
                 padding: 0; margin: 0;
             }
         }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .avatar{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $icon_background;
+            }
+        }
+        
     }
 }
