@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 2rem 0;
+    margin: 3.2rem 0;
     h3{
         margin-top: 0;
         font-size: large;
@@ -16,6 +16,7 @@
     }
     
     p{
+        margin-top: .3rem;
         color: $light_grey_text;
     }
     
@@ -26,9 +27,11 @@
         display: flex;
         word-wrap: normal;
         flex-wrap: wrap;
+        gap: 15px;
         .checkbox{
             width: 125px;
             margin-right: 50px;
+
         }
     }
 }
@@ -36,7 +39,7 @@
 @media only screen and (min-width: 1200px) {
     .config{
         .texts{
-            max-width: 40rem;
+            max-width: 55rem;
         }
     }
 }

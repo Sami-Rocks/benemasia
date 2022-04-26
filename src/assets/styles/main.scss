@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,500;1,700&family=DM+Serif+Display&display=swap');
 
 *{
-    transition: all .2s ease-in-out;
+    // transition: all .2s ease-in-out;
 }
 html{
     font-size: 79%;
@@ -80,7 +80,6 @@ body {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

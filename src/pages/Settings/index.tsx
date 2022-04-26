@@ -17,6 +17,7 @@ const Settings =()=>{
                                 <Configuration
                                     title={data.title}
                                     description={data.description}
+                                    hasCheckList={data.hasCheckList}
                                 />
                                 {data.id ===6 &&  <h4>MULTIPLE ACCESS</h4> }
                             </div>
