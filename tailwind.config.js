@@ -30,7 +30,8 @@ module.exports = {
         "7xl": ["62px", { lineHeight: "70px" }],
       },
       fontFamily: {
-        'sans': ['DM Sans', 'sans-serif'] 
+        'sans': ['DM Sans', 'sans-serif'] ,
+        'sans-display': ['DM Serif Display', 'sans-serif'] ,
       },
     },
   },

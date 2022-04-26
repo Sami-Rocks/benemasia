@@ -3,39 +3,52 @@
 @tailwind utilities;
 
 
+*{
+  border-color: #E3E6ED ;
+}
+
+
 p,
 h6,
 * {
-  @apply text-sm;
+  @apply text-sm text-black;
+}
+a{
+  @apply text-primary
+}
+
+.logo{
+  font-family: 'DM Serif Display', serif;
+  @apply text-primary font-semibold
 }
 
 small,
 sup,
 sub,
 .footnote {
-  @apply text-xs;
+  @apply text-xs text-black;
   font-weight: 400;
 }
 
 h1 {
-  @apply text-3xl;
+  @apply text-3xl text-black;
 }
 
 h2 {
-  @apply text-2xl;
+  @apply text-2xl text-black;
   line-height: 36px;
 }
 
 h3 {
-  @apply text-xl;
+  @apply text-xl text-black;
 }
 
 h4 {
-  @apply text-lg;
+  @apply text-lg text-black;
 }
 
 h5 {
-  @apply text-base;
+  @apply text-base text-black;
 }
 
 .container {
